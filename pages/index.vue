@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1>Welcome to HMP</h1>
-  </div>  
+  <div class="pa-3">
+    <v-card title="Welcome to HMP" variant="tonal"></v-card>
+  </div>
 </template>
