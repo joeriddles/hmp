@@ -18,4 +18,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  $production: {
+    baseURL: "joeriddles.github.io/hmp/"
+  }
 })
