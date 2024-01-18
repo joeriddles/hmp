@@ -18,7 +18,14 @@ export default defineNuxtConfig({
       },
     },
   },
+  $development: {
+    app: {
+      baseURL: "/"
+    },
+  },
   $production: {
-    baseURL: "joeriddles.github.io/hmp/"
-  }
+    app: {
+      baseURL: "/hmp/"
+    }
+  },
 })
