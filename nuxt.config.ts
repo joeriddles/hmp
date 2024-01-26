@@ -1,15 +1,11 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  devtools: { enabled: true },
   modules: [
-    'vuetify-nuxt-module',
     '@nuxt/content',
+    '@nuxt/image',
+    'vuetify-nuxt-module',
   ],
-  vuetify: {
-    moduleOptions: {},
-    vuetifyOptions: {}
-  },
   content: {
     highlight: {
       theme: {
@@ -18,7 +14,18 @@ export default defineNuxtConfig({
       },
     },
   },
+  image: {
+    quality: 80,
+    format: ['jpg'],
+  },
+  vuetify: {
+    moduleOptions: {},
+    vuetifyOptions: {}
+  },
   $development: {
+    devtools: {
+      enabled: true,
+    },
     app: {
       baseURL: "/"
     },
