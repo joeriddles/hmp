@@ -33,6 +33,7 @@ const onResize = (_: UIEvent) => {
 
 <style>
 .gallery-image-container {
+  height: 600px;
   max-width: 100%;
 }
 

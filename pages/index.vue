@@ -1,6 +1,13 @@
 <template>
-  <div>
+  <div style="position: relative;">
+    <div class="logo">
+      <img src="/logo.svg" style="width: 400px; margin-top: 48px;" />
+    </div>
     <gallery v-model="imgs" />
+
+    <div style="height: 800px; background-color: #ccbea8;">
+
+    </div>
   </div>
 </template>
 
@@ -15,15 +22,11 @@ const imgs = ref([
 </script>
 
 <style>
-.grid {
-  position: relative;
+.logo {
   width: 100%;
-  box-sizing: border-box;
-}
-
-.grid-item {
-  position: relative;
-  display: block;
-  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
 }
 </style>

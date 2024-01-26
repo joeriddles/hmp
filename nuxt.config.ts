@@ -3,6 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
+    '@nuxtjs/google-fonts',
     'vuetify-nuxt-module',
   ],
   content: {
@@ -17,9 +18,14 @@ export default defineNuxtConfig({
     moduleOptions: {},
     vuetifyOptions: {}
   },
+  googleFonts: {
+    families: {
+      "Cormorant+Garamond": true
+    }
+  },
   $development: {
     devtools: {
-      enabled: true,
+      enabled: false,
     },
   },
 })
