@@ -3,7 +3,6 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
-    '@nuxt/image',
     'vuetify-nuxt-module',
   ],
   content: {
@@ -13,10 +12,6 @@ export default defineNuxtConfig({
         dark: "dark-plus",
       },
     },
-  },
-  image: {
-    quality: 80,
-    format: ['jpg'],
   },
   vuetify: {
     moduleOptions: {},

@@ -1,6 +1,6 @@
 <template>
   <div ref="galleryImageContainer" class="gallery-image-container">
-    <nuxt-img :src="model" fit="cover" height="600px" :width="width" ref="imgRef" />
+    <img :src="model" class="gallery-image" :style="`width: ${width};`" />
   </div>
 </template>
 
@@ -34,5 +34,10 @@ const onResize = (_: UIEvent) => {
 <style>
 .gallery-image-container {
   max-width: 100%;
+}
+
+.gallery-image {
+  height: 600px;
+  object-fit: cover;
 }
 </style>
