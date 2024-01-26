@@ -21,13 +21,5 @@ export default defineNuxtConfig({
     devtools: {
       enabled: true,
     },
-    app: {
-      baseURL: "/"
-    },
-  },
-  $production: {
-    app: {
-      baseURL: "/hmp/"
-    }
   },
 })
