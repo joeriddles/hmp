@@ -17,6 +17,8 @@
     "vuetify-nuxt-module": "^0.10.1"
   },
   "dependencies": {
-    "@nuxt/content": "^2.10.0"
+    "@nuxt/content": "^2.10.0",
+    "@types/canvas-confetti": "^1.6.4",
+    "canvas-confetti": "^1.9.2"
   }
 }

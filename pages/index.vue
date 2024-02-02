@@ -12,6 +12,9 @@
 </template>
 
 <script setup lang="ts">
+import confetti from 'canvas-confetti';
+
+
 const imgs = ref([
   "/IMG_4420.jpeg",
   "/IMG_4421.jpeg",
@@ -19,6 +22,18 @@ const imgs = ref([
   "/IMG_4423.jpeg",
   "/IMG_4424.jpeg",
 ])
+
+onMounted(() => {
+  var scalar = 2;
+  var butterfly = confetti.shapeFromText({ text: "🦋", scalar });
+
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+    shapes: [butterfly],
+  });
+})
 </script>
 
 <style>
